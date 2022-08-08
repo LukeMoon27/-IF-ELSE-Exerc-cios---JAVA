@@ -1,0 +1,46 @@
+import java.util.Scanner;
+public class Ex4 {
+
+	public static void main(String[] args) {
+		
+		int publico;
+		
+		Scanner entrada = new Scanner(System.in);
+		
+		System.out.print("Quantas pessoas assistiram a partidade de futebol? ");
+		publico = entrada.nextInt();
+		
+		if (publico < 5000 ) {
+			
+			System.out.println("----------------------");
+			System.out.println("TELESPECTADORES: " +publico);
+			System.out.println("PUBLICO: FRACO");
+			System.out.println("----------------------");
+			
+		}else {
+			
+			if (publico >= 5000 && publico <= 20000) {
+				
+				System.out.println("----------------------");
+				System.out.println("TELESPECTADORES: " +publico);
+				System.out.println("PUBLICO: BOM");
+				System.out.println("----------------------");
+				
+			}else {
+				
+				if (publico > 20000) {
+					
+					System.out.println("----------------------");
+					System.out.println("TELESPECTADORES: " +publico);
+					System.out.println("PUBLICO: EXCELENTE");
+					System.out.println("----------------------");
+					
+				}
+				
+			}
+			
+		}
+
+	}
+
+}
