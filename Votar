@@ -1,0 +1,47 @@
+import java.util.Scanner;
+public class Ex5 {
+
+	public static void main(String[] args) {
+		
+		int idade;
+		
+		Scanner entrada = new Scanner(System.in);
+		
+		System.out.print("Digite a sua idade: ");
+		idade = entrada.nextInt();
+		
+		if (idade < 16) {
+			
+			System.out.println("--------------------");
+			System.out.println("Idade = " + idade);
+			System.out.println("NAO PODE VOTAR");
+			System.out.println("--------------------");
+			
+			
+		}else {
+			
+			if(idade >= 16 && idade < 18 || idade > 70) {
+				
+				System.out.println("--------------------");
+				System.out.println("Idade = " + idade);
+				System.out.println("VOTO FACULTATIVO");
+				System.out.println("--------------------");
+				
+			}else {
+				
+				if(idade >= 18 && idade <=70 ) {
+					
+					System.out.println("--------------------");
+					System.out.println("Idade = " + idade);
+					System.out.println("VOTO OBRIGATORIO");
+					System.out.println("--------------------");
+					
+				}
+				
+			}
+			
+		}
+
+	}
+
+}
