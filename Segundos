@@ -1,0 +1,74 @@
+import java.util.Scanner;
+
+public class Ex7 {
+
+	public static void main(String[] args) {
+
+		int horas, minutos, segundos;
+
+		Scanner entrada = new Scanner(System.in);
+
+		System.out.print("Informe a Hora: ");
+
+		horas = entrada.nextInt();
+
+		System.out.print("Informe os Minutos: ");
+
+		minutos = entrada.nextInt();
+
+		segundos = horas * 60 * 60 + minutos * 60;
+
+		if (horas > 23 && minutos > 59) {
+
+			System.out.println("-------------------------------");
+			System.out.println("Horas = " + horas);
+			System.out.println("Minutos = " + minutos);
+			System.out.println("AVISO: HORA INCORRETA\n       MINUTOS INCORRETOS");
+			System.out.println("-------------------------------");
+		} else {
+			if (horas < 0 && minutos < 0) {
+
+				System.out.println("-------------------------------");
+				System.out.println("Horas = " + horas);
+				System.out.println("Minutos = " + minutos);
+				System.out.println("AVISO: HORA INCORRETA\n       MINUTOS INCORRETOS");
+				System.out.println("-------------------------------");
+
+			} else {
+
+				if (horas < 0 || horas > 23) {
+
+					System.out.println("-------------------------------");
+					System.out.println("Horas = " + horas);
+					System.out.println("Minutos = " + minutos);
+					System.out.println("AVISO: HORA INCORRETA");
+					System.out.println("-------------------------------");
+
+				} else {
+
+					if (minutos < 0 || minutos > 59) {
+
+						System.out.println("-------------------------------");
+						System.out.println("Horas = " + horas);
+						System.out.println("Minutos = " + minutos);
+						System.out.println("AVISO: MINUTOS INCORRETOS");
+						System.out.println("-------------------------------");
+
+					} else {
+
+						System.out.println("-------------------------------");
+						System.out.println("Horas = " + horas);
+						System.out.println("Minutos = " + minutos);
+						System.out.println("Segundos: " + segundos);
+						System.out.println("-------------------------------");
+
+					}
+
+				}
+
+			}
+		}
+
+	}
+
+}
