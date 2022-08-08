@@ -1,0 +1,42 @@
+import java.util.Scanner;
+public class Ex1 {
+
+	public static void main(String[] args) {
+		
+		int n1, n2;
+		
+		System.out.print("Digite o primeiro valor: ");
+		
+		Scanner entrada = new Scanner(System.in);
+		
+		n1 = entrada.nextInt();
+		
+		System.out.print("Digite o segundo valor: ");
+		
+		n2 = entrada.nextInt();
+		
+		if (n1 > n2) {
+			
+			System.out.println("N1 = " +n1);
+			System.out.println("N2 = " +n2);
+			
+			System.out.println("--------");
+			
+			System.out.println("Maior:" +n1);
+			System.out.println("Menor:" +n2);
+			
+		}else {
+			
+			System.out.println("N1 = " +n1);
+			System.out.println("N2 = " +n2);
+			
+			System.out.println("--------");
+			
+			System.out.println("Menor: " +n1);
+			System.out.println("Maior: " +n2);
+			
+		}
+		
+	}
+
+}
